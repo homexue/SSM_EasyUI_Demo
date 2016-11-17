@@ -3,7 +3,7 @@
 
 <script>
 	var $menu_grid = $('#menu_grid').datagrid({
-	    height: '95%',
+	
 	    title:'菜单列表', //标题
 	    iconCls:'icon-edit', //图标
 	    url: '${ctx}/menu/getPage.do',
@@ -60,7 +60,7 @@
 				deleterow();
 			}
 		}
-	]})
+	]});
 	
 	function doSearch(){
 		$menu_grid.datagrid('load',{
@@ -69,7 +69,7 @@
 		});
 	}
 </script>
-<div style="height:95%;width:100%">
-	<table id="menu_grid" style="height:100%;width:100%; border-bottom:1px">
+<div style="height:100%;width:100%;border-bottom:1px" >
+	<table id="menu_grid" style="height:75%;">
 	</table>
 </div>
